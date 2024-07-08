@@ -9,4 +9,4 @@ jobs:
     requires: [~commit:feat/test]  # This job triggers only when commits are pushed to the 'test' branch
     image: alpine:latest
     steps:
-      - greet: echo "Hello from the test branch!. How are you ?"
+      - greet: echo "Hello from the test branch!. How are you ? tteaisatuhaha"
