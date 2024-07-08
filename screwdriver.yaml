@@ -1,0 +1,11 @@
+jobs:
+  main:
+    requires: [~commit, ~pr]
+    image: ubuntu:latest
+    steps:
+      - check-version: cat /etc/os-releasejobs:
+  main:
+    requires: [~commit, ~pr]
+    image: ubuntu:latest
+    steps:
+      - check-version: cat /etc/os-release
