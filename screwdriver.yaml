@@ -4,3 +4,9 @@ jobs:
     image: alpine:latest
     steps:
       - greet: echo "Hello"
+
+  test-branch-job:
+    requires: [~commit:test]  # This job triggers only when commits are pushed to the 'test' branch
+    image: alpine:latest
+    steps:
+      - greet: echo "Hello from the test branch!"
