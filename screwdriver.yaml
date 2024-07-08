@@ -1,13 +1,13 @@
 jobs:
   hello:
     requires: [~commit,pr]
-    image: alpine:latest
+    #image: alpine:latest
     steps:
       - greet: echo "Hello"
 
   build:
     requires: [~commit,~pr]
-    image: alpine:latest
+    #image: alpine:latest
     steps:
       - greet: echo "Hello"
 
