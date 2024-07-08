@@ -1,6 +1,6 @@
 jobs:
-  hello-world:
+  build:
+    requires: [~commit,~pr]
     image: alpine:latest
     steps:
       - greet: echo "Hello"
-
