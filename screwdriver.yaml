@@ -3,13 +3,13 @@ jobs:
     requires: [~commit,pr]
     #image: alpine:latest
     steps:
-      - greet: echo "Hello"
+      - greet: echo "Hello from ray1"
 
   build:
     requires: [~commit,~pr]
     #image: alpine:latest
     steps:
-      - greet: echo "Hello"
+      - greet: echo "Hello from ray2"
 
   test-branch-job:
     requires: [~commit:feat/test]  # This job triggers only when commits are pushed to the 'test' branch
