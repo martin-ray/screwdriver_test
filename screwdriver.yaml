@@ -3,7 +3,7 @@ jobs:
     requires: [~commit,pr]
     image: alpine:latest
     steps:
-      - greet: echo "Hello from ray1"
+      - greet: echo "Hello from ray1 test2"
 
   build:
     requires: [~commit,~pr]
